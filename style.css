@@ -1,0 +1,24 @@
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+/*  deixa tiutlo no centro de dar um cor */
+
+
+.quantidade {
+    width: 50px;
+    margin-left: 10px;
+}
+/* ajusta a lasgura e  uma espaço para a esquerda */
+
+
+/* da um cor para textp e botão e uma espaçameot interno */
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 10px;
+}
+
+

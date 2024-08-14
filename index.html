@@ -1,0 +1,82 @@
+<!-- codigo avalição -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>Cardápio Digital - Fast Food</h1>
+
+    <div class="menu">
+        <h2>Hambúrgueres</h2>
+        <div class="menu-item">
+            <input type="checkbox" id="item1" name="item" value="Hamburguer Simples" data-preco="10.00">
+            <label for="item1">Hambúrguer Simples - R$10,00</label>
+            <input type="number" id="qtd1" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+        <div class="menu-item">
+            <input type="checkbox" id="item2" name="item" value="Hamburguer Broto" data-preco="2.00">
+            <label for="item2">Hambúrguer Broto - R$2,00</label>
+            <input type="number" id="qtd2" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+
+        <h2>Salgados</h2>
+        <div class="menu-item">
+            <input type="checkbox" id="item3" name="item" value="Coxinha" data-preco="5.00">
+            <label for="item3">Coxinha - R$5,00</label>
+            <input type="number" id="qtd3" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+        <div class="menu-item">
+            <input type="checkbox" id="item4" name="item" value="Pastel" data-preco="7.00">
+            <label for="item4">Pastel - R$7,00</label>
+            <input type="number" id="qtd4" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+
+        <h2>Bebidas</h2>
+        <div class="menu-item">
+            <input type="checkbox" id="item5" name="item" value="coca-cola" data-preco="3.00">
+            <label for="item5">coca-cola - R$3,00</label>
+            <input type="number" id="qtd5" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+        <div class="menu-item">
+            <input type="checkbox" id="item6" name="item" value="Fanta" data-preco="4.00">
+            <label for="item6">Fanta - R$4,00</label>
+            <input type="number" id="qtd6" class="quantidade" min="1" max="10" value="1" disabled>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: R$<span id="totalpreco">0.00</span></p>
+        <button id="finalizar">Finalizar Pedido</button>
+    </div>
+
+    <div id="resumo" style="display:none;">
+        <h2>Resumo do Pedido</h2>
+        <p>Itens:</p>
+        <ul id="orderItems"></ul>
+        <p>Total: R$<span id="ordertotalpreco">0.00</span></p>
+        <label for="formapag">Forma de Pagamento:</label>
+        <select id="formapag">
+            <option value="debito">Cartão de Débito</option>
+            <option value="credito">Cartão de Crédito</option>
+            <option value="pix">Pix</option>
+        </select>
+        <br><br>
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" required>
+        <br><br>
+        <button id="Confirmar">Confirmar Pedido</button>
+        <button id="cancelar">Cancelar Pedido</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
